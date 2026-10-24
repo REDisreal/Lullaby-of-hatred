@@ -3,6 +3,7 @@ using UnityEngine;
 public class PlayerHealth : MonoBehaviour
 {
     [SerializeField] private float maxHealth = 100f;
+    [SerializeField] private float regenPerSecond = 1f;
 
     private float currentHealth;
     public float CurrentHealth => currentHealth;
@@ -11,6 +12,10 @@ public class PlayerHealth : MonoBehaviour
     private void Awake()
     {
         currentHealth = maxHealth;
+    }
+    private void Update()
+    {
+        Heal(regenPerSecond * Time.deltaTime);
     }
 
     public void TakeDamage(float amount)
@@ -23,7 +28,13 @@ public class PlayerHealth : MonoBehaviour
             Die();
         }
     }
-    private void Die()
+    public float Heal(float amount)
+    {
+        float before = currentHealth;
+        currentHealth = Mathf.Min(currentHealth + amount, maxHealth);
+        return currentHealth - before;
+    }
+    public void Die()
     {
         Debug.Log("Player đã chết");
         Destroy(gameObject);
