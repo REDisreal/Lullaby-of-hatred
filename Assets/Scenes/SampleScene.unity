@@ -247,7 +247,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 100, y: -15}
+  m_AnchoredPosition: {x: 100.2, y: -14.8}
   m_SizeDelta: {x: 200, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &315569093
@@ -270,7 +270,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 7482667652216324306, guid: 8e753f9b4fd7df143bfacdb4230c2ae0, type: 3}
+  m_Sprite: {fileID: 7482667652216324306, guid: b93c0a20aff43044a9dd0e33539524da, type: 3}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -542,7 +542,11 @@ MonoBehaviour:
         m_SelectedSource:
           rid: -2
         m_Provider2DCache:
-          rid: -2
+          rid: 7690821676192497670
+    - rid: 7690821676192497670
+      type: {class: 'Provider2DCache`1[[UnityEngine.Rendering.Universal.Light2DProvider, Unity.RenderPipelines.Universal.2D.Runtime]]', ns: UnityEngine.Rendering.Universal, asm: Unity.RenderPipelines.Universal.2D.Runtime}
+      data:
+        m_Cache: []
 --- !u!4 &619394802
 Transform:
   m_ObjectHideFlags: 0
@@ -757,7 +761,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1024
   hitboxVisual: {fileID: 1583913757}
-  logStateChanges: 1
+  logStateChanges: 0
   currentState: 0
 --- !u!114 &747686949
 MonoBehaviour:
@@ -932,7 +936,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 100.3, y: -15.1}
+  m_AnchoredPosition: {x: 100, y: -15}
   m_SizeDelta: {x: 200, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1432811477
@@ -969,7 +973,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 7482667652216324306, guid: 8e753f9b4fd7df143bfacdb4230c2ae0, type: 3}
+  m_Sprite: {fileID: 7482667652216324306, guid: b93c0a20aff43044a9dd0e33539524da, type: 3}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
